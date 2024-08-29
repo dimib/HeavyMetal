@@ -14,6 +14,10 @@
 		364EA5EB2C7F9D7D006E372F /* HeavyMetalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EA5EA2C7F9D7D006E372F /* HeavyMetalTests.swift */; };
 		364EA5F52C7F9D7D006E372F /* HeavyMetalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EA5F42C7F9D7D006E372F /* HeavyMetalUITests.swift */; };
 		364EA5F72C7F9D7D006E372F /* HeavyMetalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EA5F62C7F9D7D006E372F /* HeavyMetalUITestsLaunchTests.swift */; };
+		364EA6062C7F9F91006E372F /* CalculationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EA6052C7F9F91006E372F /* CalculationContentView.swift */; };
+		364EA6082C7FA156006E372F /* CalculationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EA6072C7FA156006E372F /* CalculationDemo.swift */; };
+		364EA60A2C7FA8D7006E372F /* Date+Milliseconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EA6092C7FA8D7006E372F /* Date+Milliseconds.swift */; };
+		364EA60C2C7FB4BF006E372F /* CalculationDemo.metal in Sources */ = {isa = PBXBuildFile; fileRef = 364EA60B2C7FB4BF006E372F /* CalculationDemo.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		364EA5F02C7F9D7D006E372F /* HeavyMetalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeavyMetalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		364EA5F42C7F9D7D006E372F /* HeavyMetalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeavyMetalUITests.swift; sourceTree = "<group>"; };
 		364EA5F62C7F9D7D006E372F /* HeavyMetalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeavyMetalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		364EA6052C7F9F91006E372F /* CalculationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationContentView.swift; sourceTree = "<group>"; };
+		364EA6072C7FA156006E372F /* CalculationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationDemo.swift; sourceTree = "<group>"; };
+		364EA6092C7FA8D7006E372F /* Date+Milliseconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Milliseconds.swift"; sourceTree = "<group>"; };
+		364EA60B2C7FB4BF006E372F /* CalculationDemo.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CalculationDemo.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +102,12 @@
 		364EA5D82C7F9D7A006E372F /* HeavyMetal */ = {
 			isa = PBXGroup;
 			children = (
+				364EA6032C7F9DAB006E372F /* Demo */,
 				364EA5D92C7F9D7A006E372F /* HeavyMetalApp.swift */,
 				364EA5DB2C7F9D7A006E372F /* ContentView.swift */,
 				364EA5DD2C7F9D7C006E372F /* Assets.xcassets */,
 				364EA5DF2C7F9D7C006E372F /* Preview Content */,
+				364EA6092C7FA8D7006E372F /* Date+Milliseconds.swift */,
 			);
 			path = HeavyMetal;
 			sourceTree = "<group>";
@@ -125,6 +135,24 @@
 				364EA5F62C7F9D7D006E372F /* HeavyMetalUITestsLaunchTests.swift */,
 			);
 			path = HeavyMetalUITests;
+			sourceTree = "<group>";
+		};
+		364EA6032C7F9DAB006E372F /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				364EA6042C7F9DB8006E372F /* Calculation */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		364EA6042C7F9DB8006E372F /* Calculation */ = {
+			isa = PBXGroup;
+			children = (
+				364EA6052C7F9F91006E372F /* CalculationContentView.swift */,
+				364EA6072C7FA156006E372F /* CalculationDemo.swift */,
+				364EA60B2C7FB4BF006E372F /* CalculationDemo.metal */,
+			);
+			path = Calculation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				364EA60C2C7FB4BF006E372F /* CalculationDemo.metal in Sources */,
+				364EA6082C7FA156006E372F /* CalculationDemo.swift in Sources */,
 				364EA5DC2C7F9D7A006E372F /* ContentView.swift in Sources */,
+				364EA6062C7F9F91006E372F /* CalculationContentView.swift in Sources */,
 				364EA5DA2C7F9D7A006E372F /* HeavyMetalApp.swift in Sources */,
+				364EA60A2C7FA8D7006E372F /* Date+Milliseconds.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +462,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +492,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -9,13 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                NavigationLink(destination: CalculationContentView()) {
+                    label(title: "Calculation")
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         }
-        .padding()
+    }
+    
+    func label(title: String) -> Label<Text, some View> {
+        Label(
+            title: { 
+                Text(title)
+                    .font(.body)
+                    .foregroundStyle(Color.black) },
+            icon: {
+                Image(systemName: "menucard")
+                    .foregroundColor(.black)
+                    .font(.body)
+            }
+        )
     }
 }
 
