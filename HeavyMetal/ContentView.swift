@@ -14,6 +14,16 @@ struct ContentView: View {
                 NavigationLink(destination: CalculationContentView()) {
                     label(title: "Calculation")
                 }
+                NavigationLink(destination: EasyShaderContentView()) {
+                    label(title: "Easy shader")
+                }
+                NavigationLink(destination: AnimatedShaderContentView()) {
+                    label(title: "Animated shader")
+                }
+                NavigationLink(destination: PiratesShaderContentView()) {
+                    label(title: "Arrrr 🏴‍☠️")
+                }
+
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         }

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0581092C810DE800207B78 /* AnimatedShaderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0581082C810DE800207B78 /* AnimatedShaderContentView.swift */; };
+		1D05810B2C810E3D00207B78 /* AnimatedShaderDemo.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1D05810A2C810E3D00207B78 /* AnimatedShaderDemo.metal */; };
+		1D4C01062C8102B100BC6C7E /* EasyShaderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C01052C8102B100BC6C7E /* EasyShaderContentView.swift */; };
+		1D4C01092C8105A100BC6C7E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1D4C01082C8105A100BC6C7E /* README.md */; };
+		1D4C010B2C8108AA00BC6C7E /* EasyShaderDemo.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C010A2C8108AA00BC6C7E /* EasyShaderDemo.metal */; };
+		1DB1D2552C811530006E1C79 /* PiratesShaderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1D2542C811530006E1C79 /* PiratesShaderContentView.swift */; };
+		1DB1D2572C811546006E1C79 /* PiratesShaderDemo.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1D2562C811546006E1C79 /* PiratesShaderDemo.metal */; };
 		364EA5DA2C7F9D7A006E372F /* HeavyMetalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EA5D92C7F9D7A006E372F /* HeavyMetalApp.swift */; };
 		364EA5DC2C7F9D7A006E372F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EA5DB2C7F9D7A006E372F /* ContentView.swift */; };
 		364EA5DE2C7F9D7C006E372F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364EA5DD2C7F9D7C006E372F /* Assets.xcassets */; };
@@ -38,6 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D0581082C810DE800207B78 /* AnimatedShaderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedShaderContentView.swift; sourceTree = "<group>"; };
+		1D05810A2C810E3D00207B78 /* AnimatedShaderDemo.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = AnimatedShaderDemo.metal; sourceTree = "<group>"; };
+		1D4C01052C8102B100BC6C7E /* EasyShaderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyShaderContentView.swift; sourceTree = "<group>"; };
+		1D4C01082C8105A100BC6C7E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1D4C010A2C8108AA00BC6C7E /* EasyShaderDemo.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = EasyShaderDemo.metal; sourceTree = "<group>"; };
+		1DB1D2542C811530006E1C79 /* PiratesShaderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiratesShaderContentView.swift; sourceTree = "<group>"; };
+		1DB1D2562C811546006E1C79 /* PiratesShaderDemo.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PiratesShaderDemo.metal; sourceTree = "<group>"; };
 		364EA5D62C7F9D7A006E372F /* HeavyMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeavyMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		364EA5D92C7F9D7A006E372F /* HeavyMetalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeavyMetalApp.swift; sourceTree = "<group>"; };
 		364EA5DB2C7F9D7A006E372F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,9 +93,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D0581052C810DB400207B78 /* AnimatedShader */ = {
+			isa = PBXGroup;
+			children = (
+				1D0581082C810DE800207B78 /* AnimatedShaderContentView.swift */,
+				1D05810A2C810E3D00207B78 /* AnimatedShaderDemo.metal */,
+			);
+			path = AnimatedShader;
+			sourceTree = "<group>";
+		};
+		1D4C01042C81029500BC6C7E /* EasyShader */ = {
+			isa = PBXGroup;
+			children = (
+				1D4C01052C8102B100BC6C7E /* EasyShaderContentView.swift */,
+				1D4C010A2C8108AA00BC6C7E /* EasyShaderDemo.metal */,
+			);
+			path = EasyShader;
+			sourceTree = "<group>";
+		};
+		1DB1D2532C81151A006E1C79 /* PiratesShader */ = {
+			isa = PBXGroup;
+			children = (
+				1DB1D2542C811530006E1C79 /* PiratesShaderContentView.swift */,
+				1DB1D2562C811546006E1C79 /* PiratesShaderDemo.metal */,
+			);
+			path = PiratesShader;
+			sourceTree = "<group>";
+		};
 		364EA5CD2C7F9D7A006E372F = {
 			isa = PBXGroup;
 			children = (
+				1D4C01082C8105A100BC6C7E /* README.md */,
 				364EA5D82C7F9D7A006E372F /* HeavyMetal */,
 				364EA5E92C7F9D7D006E372F /* HeavyMetalTests */,
 				364EA5F32C7F9D7D006E372F /* HeavyMetalUITests */,
@@ -140,6 +182,9 @@
 		364EA6032C7F9DAB006E372F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				1DB1D2532C81151A006E1C79 /* PiratesShader */,
+				1D0581052C810DB400207B78 /* AnimatedShader */,
+				1D4C01042C81029500BC6C7E /* EasyShader */,
 				364EA6042C7F9DB8006E372F /* Calculation */,
 			);
 			path = Demo;
@@ -243,6 +288,9 @@
 				Base,
 			);
 			mainGroup = 364EA5CD2C7F9D7A006E372F;
+			packageReferences = (
+				1D4C01072C8103B500BC6C7E /* XCRemoteSwiftPackageReference "Inferno" */,
+			);
 			productRefGroup = 364EA5D72C7F9D7A006E372F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D4C01092C8105A100BC6C7E /* README.md in Resources */,
 				364EA5E12C7F9D7C006E372F /* Preview Assets.xcassets in Resources */,
 				364EA5DE2C7F9D7C006E372F /* Assets.xcassets in Resources */,
 			);
@@ -285,12 +334,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D4C01062C8102B100BC6C7E /* EasyShaderContentView.swift in Sources */,
 				364EA60C2C7FB4BF006E372F /* CalculationDemo.metal in Sources */,
 				364EA6082C7FA156006E372F /* CalculationDemo.swift in Sources */,
+				1D4C010B2C8108AA00BC6C7E /* EasyShaderDemo.metal in Sources */,
+				1DB1D2572C811546006E1C79 /* PiratesShaderDemo.metal in Sources */,
 				364EA5DC2C7F9D7A006E372F /* ContentView.swift in Sources */,
 				364EA6062C7F9F91006E372F /* CalculationContentView.swift in Sources */,
 				364EA5DA2C7F9D7A006E372F /* HeavyMetalApp.swift in Sources */,
+				1D0581092C810DE800207B78 /* AnimatedShaderContentView.swift in Sources */,
+				1DB1D2552C811530006E1C79 /* PiratesShaderContentView.swift in Sources */,
 				364EA60A2C7FA8D7006E372F /* Date+Milliseconds.swift in Sources */,
+				1D05810B2C810E3D00207B78 /* AnimatedShaderDemo.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +677,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1D4C01072C8103B500BC6C7E /* XCRemoteSwiftPackageReference "Inferno" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/Inferno.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 364EA5CE2C7F9D7A006E372F /* Project object */;
 }
