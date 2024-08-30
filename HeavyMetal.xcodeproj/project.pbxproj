@@ -29,6 +29,11 @@
 		364EA6082C7FA156006E372F /* CalculationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EA6072C7FA156006E372F /* CalculationDemo.swift */; };
 		364EA60A2C7FA8D7006E372F /* Date+Milliseconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EA6092C7FA8D7006E372F /* Date+Milliseconds.swift */; };
 		364EA60C2C7FB4BF006E372F /* CalculationDemo.metal in Sources */ = {isa = PBXBuildFile; fileRef = 364EA60B2C7FB4BF006E372F /* CalculationDemo.metal */; };
+		364F10442C8249730055D771 /* HardRockDemo.metal in Sources */ = {isa = PBXBuildFile; fileRef = 364F10432C8249730055D771 /* HardRockDemo.metal */; };
+		364F10462C8252DA0055D771 /* HardRockDemoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F10452C8252DA0055D771 /* HardRockDemoContentView.swift */; };
+		364F10492C8258120055D771 /* AppleLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 364F10472C8258120055D771 /* AppleLogo.png */; };
+		364F104B2C825C100055D771 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F104A2C825C100055D771 /* Types.swift */; };
+		364F104D2C825E630055D771 /* AppleLogoBlack.svg in Resources */ = {isa = PBXBuildFile; fileRef = 364F104C2C825E630055D771 /* AppleLogoBlack.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +79,11 @@
 		364EA6072C7FA156006E372F /* CalculationDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationDemo.swift; sourceTree = "<group>"; };
 		364EA6092C7FA8D7006E372F /* Date+Milliseconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Milliseconds.swift"; sourceTree = "<group>"; };
 		364EA60B2C7FB4BF006E372F /* CalculationDemo.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CalculationDemo.metal; sourceTree = "<group>"; };
+		364F10432C8249730055D771 /* HardRockDemo.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = HardRockDemo.metal; sourceTree = "<group>"; };
+		364F10452C8252DA0055D771 /* HardRockDemoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardRockDemoContentView.swift; sourceTree = "<group>"; };
+		364F10472C8258120055D771 /* AppleLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppleLogo.png; sourceTree = "<group>"; };
+		364F104A2C825C100055D771 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		364F104C2C825E630055D771 /* AppleLogoBlack.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppleLogoBlack.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +145,9 @@
 			children = (
 				1DB358752C823C8100FAB837 /* MetalKitViewRepresentable.swift */,
 				1DB358772C823D4D00FAB837 /* MetalKitViewModel.swift */,
+				364F10432C8249730055D771 /* HardRockDemo.metal */,
+				364F10452C8252DA0055D771 /* HardRockDemoContentView.swift */,
+				364F104A2C825C100055D771 /* Types.swift */,
 			);
 			path = HardRock;
 			sourceTree = "<group>";
@@ -163,6 +176,7 @@
 		364EA5D82C7F9D7A006E372F /* HeavyMetal */ = {
 			isa = PBXGroup;
 			children = (
+				364F10482C8258120055D771 /* Resources */,
 				364EA6032C7F9DAB006E372F /* Demo */,
 				364EA5D92C7F9D7A006E372F /* HeavyMetalApp.swift */,
 				364EA5DB2C7F9D7A006E372F /* ContentView.swift */,
@@ -218,6 +232,15 @@
 				364EA60B2C7FB4BF006E372F /* CalculationDemo.metal */,
 			);
 			path = Calculation;
+			sourceTree = "<group>";
+		};
+		364F10482C8258120055D771 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				364F104C2C825E630055D771 /* AppleLogoBlack.svg */,
+				364F10472C8258120055D771 /* AppleLogo.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,8 +351,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D4C01092C8105A100BC6C7E /* README.md in Resources */,
+				364F104D2C825E630055D771 /* AppleLogoBlack.svg in Resources */,
 				364EA5E12C7F9D7C006E372F /* Preview Assets.xcassets in Resources */,
 				364EA5DE2C7F9D7C006E372F /* Assets.xcassets in Resources */,
+				364F10492C8258120055D771 /* AppleLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +381,9 @@
 			files = (
 				1DB358712C82318600FAB837 /* PirateFlagSimpleView.swift in Sources */,
 				1D4C01062C8102B100BC6C7E /* EasyShaderContentView.swift in Sources */,
+				364F10442C8249730055D771 /* HardRockDemo.metal in Sources */,
 				364EA60C2C7FB4BF006E372F /* CalculationDemo.metal in Sources */,
+				364F104B2C825C100055D771 /* Types.swift in Sources */,
 				364EA6082C7FA156006E372F /* CalculationDemo.swift in Sources */,
 				1D4C010B2C8108AA00BC6C7E /* EasyShaderDemo.metal in Sources */,
 				1DB1D2572C811546006E1C79 /* PiratesShaderDemo.metal in Sources */,
@@ -368,6 +395,7 @@
 				1DB358762C823C8100FAB837 /* MetalKitViewRepresentable.swift in Sources */,
 				1D0581092C810DE800207B78 /* AnimatedShaderContentView.swift in Sources */,
 				1DB1D2552C811530006E1C79 /* PiratesShaderContentView.swift in Sources */,
+				364F10462C8252DA0055D771 /* HardRockDemoContentView.swift in Sources */,
 				364EA60A2C7FA8D7006E372F /* Date+Milliseconds.swift in Sources */,
 				1D05810B2C810E3D00207B78 /* AnimatedShaderDemo.metal in Sources */,
 			);

@@ -10,7 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack {
+
+            Text("🤘😎 Heavy Metal")
+                .font(.title)
+
             List {
+
                 NavigationLink(destination: CalculationContentView()) {
                     label(title: "Calculation")
                 }
@@ -23,7 +28,9 @@ struct ContentView: View {
                 NavigationLink(destination: PiratesShaderContentView()) {
                     label(title: "Arrrr 🏴‍☠️")
                 }
-
+                NavigationLink(destination: HardRockDemoContentView()) {
+                    label(title: "Hard Rock 🤘")
+                }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         }

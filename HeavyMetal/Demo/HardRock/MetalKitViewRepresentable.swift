@@ -11,14 +11,17 @@ import SwiftUI
 
 struct MetalKitViewRepresentable: UIViewRepresentable {
 
-
+    @State var viewModel = MetalKitViewModel()
+    
+    
     func updateUIView(_ uiView: MTKView, context: Context) {
-        return MTKView(frame: .zero, device: <#T##(any MTLDevice)?#>)
     }
     
     
     func makeUIView(context: Context) -> MTKView {
-        <#code#>
+        let view = MTKView(frame: .zero)
+        view.device = viewModel.device
+        view.delegate = viewModel
+        return view
     }
-
 }

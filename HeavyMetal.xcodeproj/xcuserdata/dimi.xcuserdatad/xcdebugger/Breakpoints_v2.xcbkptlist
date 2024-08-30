@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C5BE0BF0-BE41-468F-8725-E20ABA07A773"
+            uuid = "45A30AF7-3604-4B93-83B3-7D598113C278"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HeavyMetal/Demo/Calculation/CalculationDemo.swift"
+            filePath = "HeavyMetal/Demo/HardRock/MetalKitViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "calculateWithGpu(completion:)"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "draw(in:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
