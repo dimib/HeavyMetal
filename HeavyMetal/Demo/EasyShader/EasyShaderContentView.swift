@@ -10,12 +10,10 @@ import SwiftUI
 struct EasyShaderContentView: View {
     var body: some View {
         VStack {
-           Image("AppleLogo")
+           Image("AppleLogoBlack")
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .scaledToFit()
                 .colorEffect(ShaderLibrary.gradientFill())
-
-            Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
     }

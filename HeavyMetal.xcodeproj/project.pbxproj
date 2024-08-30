@@ -14,6 +14,10 @@
 		1D4C010B2C8108AA00BC6C7E /* EasyShaderDemo.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C010A2C8108AA00BC6C7E /* EasyShaderDemo.metal */; };
 		1DB1D2552C811530006E1C79 /* PiratesShaderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1D2542C811530006E1C79 /* PiratesShaderContentView.swift */; };
 		1DB1D2572C811546006E1C79 /* PiratesShaderDemo.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1D2562C811546006E1C79 /* PiratesShaderDemo.metal */; };
+		1DB358712C82318600FAB837 /* PirateFlagSimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB358702C82318600FAB837 /* PirateFlagSimpleView.swift */; };
+		1DB358732C82331D00FAB837 /* PirateFlagRealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB358722C82331D00FAB837 /* PirateFlagRealView.swift */; };
+		1DB358762C823C8100FAB837 /* MetalKitViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB358752C823C8100FAB837 /* MetalKitViewRepresentable.swift */; };
+		1DB358782C823D4D00FAB837 /* MetalKitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB358772C823D4D00FAB837 /* MetalKitViewModel.swift */; };
 		364EA5DA2C7F9D7A006E372F /* HeavyMetalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EA5D92C7F9D7A006E372F /* HeavyMetalApp.swift */; };
 		364EA5DC2C7F9D7A006E372F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364EA5DB2C7F9D7A006E372F /* ContentView.swift */; };
 		364EA5DE2C7F9D7C006E372F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 364EA5DD2C7F9D7C006E372F /* Assets.xcassets */; };
@@ -52,6 +56,10 @@
 		1D4C010A2C8108AA00BC6C7E /* EasyShaderDemo.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = EasyShaderDemo.metal; sourceTree = "<group>"; };
 		1DB1D2542C811530006E1C79 /* PiratesShaderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiratesShaderContentView.swift; sourceTree = "<group>"; };
 		1DB1D2562C811546006E1C79 /* PiratesShaderDemo.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PiratesShaderDemo.metal; sourceTree = "<group>"; };
+		1DB358702C82318600FAB837 /* PirateFlagSimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PirateFlagSimpleView.swift; sourceTree = "<group>"; };
+		1DB358722C82331D00FAB837 /* PirateFlagRealView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PirateFlagRealView.swift; sourceTree = "<group>"; };
+		1DB358752C823C8100FAB837 /* MetalKitViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalKitViewRepresentable.swift; sourceTree = "<group>"; };
+		1DB358772C823D4D00FAB837 /* MetalKitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalKitViewModel.swift; sourceTree = "<group>"; };
 		364EA5D62C7F9D7A006E372F /* HeavyMetal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeavyMetal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		364EA5D92C7F9D7A006E372F /* HeavyMetalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeavyMetalApp.swift; sourceTree = "<group>"; };
 		364EA5DB2C7F9D7A006E372F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,8 +124,19 @@
 			children = (
 				1DB1D2542C811530006E1C79 /* PiratesShaderContentView.swift */,
 				1DB1D2562C811546006E1C79 /* PiratesShaderDemo.metal */,
+				1DB358702C82318600FAB837 /* PirateFlagSimpleView.swift */,
+				1DB358722C82331D00FAB837 /* PirateFlagRealView.swift */,
 			);
 			path = PiratesShader;
+			sourceTree = "<group>";
+		};
+		1DB358742C823C5100FAB837 /* HardRock */ = {
+			isa = PBXGroup;
+			children = (
+				1DB358752C823C8100FAB837 /* MetalKitViewRepresentable.swift */,
+				1DB358772C823D4D00FAB837 /* MetalKitViewModel.swift */,
+			);
+			path = HardRock;
 			sourceTree = "<group>";
 		};
 		364EA5CD2C7F9D7A006E372F = {
@@ -182,6 +201,7 @@
 		364EA6032C7F9DAB006E372F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				1DB358742C823C5100FAB837 /* HardRock */,
 				1DB1D2532C81151A006E1C79 /* PiratesShader */,
 				1D0581052C810DB400207B78 /* AnimatedShader */,
 				1D4C01042C81029500BC6C7E /* EasyShader */,
@@ -334,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB358712C82318600FAB837 /* PirateFlagSimpleView.swift in Sources */,
 				1D4C01062C8102B100BC6C7E /* EasyShaderContentView.swift in Sources */,
 				364EA60C2C7FB4BF006E372F /* CalculationDemo.metal in Sources */,
 				364EA6082C7FA156006E372F /* CalculationDemo.swift in Sources */,
@@ -342,6 +363,9 @@
 				364EA5DC2C7F9D7A006E372F /* ContentView.swift in Sources */,
 				364EA6062C7F9F91006E372F /* CalculationContentView.swift in Sources */,
 				364EA5DA2C7F9D7A006E372F /* HeavyMetalApp.swift in Sources */,
+				1DB358782C823D4D00FAB837 /* MetalKitViewModel.swift in Sources */,
+				1DB358732C82331D00FAB837 /* PirateFlagRealView.swift in Sources */,
+				1DB358762C823C8100FAB837 /* MetalKitViewRepresentable.swift in Sources */,
 				1D0581092C810DE800207B78 /* AnimatedShaderContentView.swift in Sources */,
 				1DB1D2552C811530006E1C79 /* PiratesShaderContentView.swift in Sources */,
 				364EA60A2C7FA8D7006E372F /* Date+Milliseconds.swift in Sources */,

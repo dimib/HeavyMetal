@@ -8,9 +8,9 @@
 #include <metal_stdlib>
 using namespace metal;
 
-[[stitchable]] float2 waveFlag(float2 pos, float t, float2 size) {
-    float offset = 30;
-    pos.y += sin(t * offset + pos.x / 20) + offset;
+[[stitchable]] float2 waveFlag(float2 pos, float t) {
+    float offset = 10;
+    pos.y += sin(t * offset + pos.x / 20) * offset;
     return pos;
 }
 
@@ -21,3 +21,14 @@ using namespace metal;
     float angle = atan2(pos.y, pos.x) + time;
     return half4(sin(angle), sin(angle + 2), sin(angle +4), color.a);
 }
+
+
+[[stitchable]] float2 waveFlagReal(float2 pos, float t, float2 size) {
+    float offset = 20;
+
+    float2 distance = pos / size;
+
+    pos.y += sin(t * offset + pos.x / 20) * (distance.x * offset);
+    return pos;
+}
+

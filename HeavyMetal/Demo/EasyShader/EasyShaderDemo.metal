@@ -36,9 +36,33 @@ using namespace metal;
 
 
 
+
+
+
+
+
+
+
+
 [[stitchable]] half4 recolor(float2 pos, half4 color) {
     return half4(color.r, 0, 0, color.a);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -99,6 +123,11 @@ using namespace metal;
 
 
 
+
+
+
+
 [[stitchable]] half4 gradientFill(float2 pos, half4 color) {
+    if (color.a == 0) { return color; }
     return half4(pos.x / pos.y, 0, pos.y / pos.x, color.a);
 }
