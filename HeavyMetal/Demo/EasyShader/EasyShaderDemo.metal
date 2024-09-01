@@ -44,6 +44,8 @@ using namespace metal;
 
 
 
+
+
 [[stitchable]] half4 recolor(float2 pos, half4 color) {
     return half4(color.r, 0, 0, color.a);
 }

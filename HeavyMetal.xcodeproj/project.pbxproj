@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1D0581092C810DE800207B78 /* AnimatedShaderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0581082C810DE800207B78 /* AnimatedShaderContentView.swift */; };
 		1D05810B2C810E3D00207B78 /* AnimatedShaderDemo.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1D05810A2C810E3D00207B78 /* AnimatedShaderDemo.metal */; };
+		1D3C80F12C84664100806BDD /* LayerShaderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3C80F02C84664100806BDD /* LayerShaderContentView.swift */; };
+		1D3C80F32C84697700806BDD /* LayerShaderDemo.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1D3C80F22C84697700806BDD /* LayerShaderDemo.metal */; };
+		1D3C80F62C84D33D00806BDD /* InfernoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3C80F52C84D33D00806BDD /* InfernoContentView.swift */; };
+		1D3C80F92C84D51800806BDD /* Inferno in Frameworks */ = {isa = PBXBuildFile; productRef = 1D3C80F82C84D51800806BDD /* Inferno */; };
 		1D4C01062C8102B100BC6C7E /* EasyShaderContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C01052C8102B100BC6C7E /* EasyShaderContentView.swift */; };
 		1D4C01092C8105A100BC6C7E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1D4C01082C8105A100BC6C7E /* README.md */; };
 		1D4C010B2C8108AA00BC6C7E /* EasyShaderDemo.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C010A2C8108AA00BC6C7E /* EasyShaderDemo.metal */; };
@@ -56,6 +60,9 @@
 /* Begin PBXFileReference section */
 		1D0581082C810DE800207B78 /* AnimatedShaderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedShaderContentView.swift; sourceTree = "<group>"; };
 		1D05810A2C810E3D00207B78 /* AnimatedShaderDemo.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = AnimatedShaderDemo.metal; sourceTree = "<group>"; };
+		1D3C80F02C84664100806BDD /* LayerShaderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerShaderContentView.swift; sourceTree = "<group>"; };
+		1D3C80F22C84697700806BDD /* LayerShaderDemo.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = LayerShaderDemo.metal; sourceTree = "<group>"; };
+		1D3C80F52C84D33D00806BDD /* InfernoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfernoContentView.swift; sourceTree = "<group>"; };
 		1D4C01052C8102B100BC6C7E /* EasyShaderContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyShaderContentView.swift; sourceTree = "<group>"; };
 		1D4C01082C8105A100BC6C7E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1D4C010A2C8108AA00BC6C7E /* EasyShaderDemo.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = EasyShaderDemo.metal; sourceTree = "<group>"; };
@@ -91,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3C80F92C84D51800806BDD /* Inferno in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +126,30 @@
 				1D05810A2C810E3D00207B78 /* AnimatedShaderDemo.metal */,
 			);
 			path = AnimatedShader;
+			sourceTree = "<group>";
+		};
+		1D3C80EF2C8465B200806BDD /* LayerShader */ = {
+			isa = PBXGroup;
+			children = (
+				1D3C80F02C84664100806BDD /* LayerShaderContentView.swift */,
+				1D3C80F22C84697700806BDD /* LayerShaderDemo.metal */,
+			);
+			path = LayerShader;
+			sourceTree = "<group>";
+		};
+		1D3C80F42C84D2D200806BDD /* Inferno */ = {
+			isa = PBXGroup;
+			children = (
+				1D3C80F52C84D33D00806BDD /* InfernoContentView.swift */,
+			);
+			path = Inferno;
+			sourceTree = "<group>";
+		};
+		1D3C80F72C84D51800806BDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		1D4C01042C81029500BC6C7E /* EasyShader */ = {
@@ -160,6 +192,7 @@
 				364EA5E92C7F9D7D006E372F /* HeavyMetalTests */,
 				364EA5F32C7F9D7D006E372F /* HeavyMetalUITests */,
 				364EA5D72C7F9D7A006E372F /* Products */,
+				1D3C80F72C84D51800806BDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,6 +248,8 @@
 		364EA6032C7F9DAB006E372F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				1D3C80F42C84D2D200806BDD /* Inferno */,
+				1D3C80EF2C8465B200806BDD /* LayerShader */,
 				1DB358742C823C5100FAB837 /* HardRock */,
 				1DB1D2532C81151A006E1C79 /* PiratesShader */,
 				1D0581052C810DB400207B78 /* AnimatedShader */,
@@ -259,6 +294,9 @@
 			dependencies = (
 			);
 			name = HeavyMetal;
+			packageProductDependencies = (
+				1D3C80F82C84D51800806BDD /* Inferno */,
+			);
 			productName = HeavyMetal;
 			productReference = 364EA5D62C7F9D7A006E372F /* HeavyMetal.app */;
 			productType = "com.apple.product-type.application";
@@ -384,10 +422,13 @@
 				364F10442C8249730055D771 /* HardRockDemo.metal in Sources */,
 				364EA60C2C7FB4BF006E372F /* CalculationDemo.metal in Sources */,
 				364F104B2C825C100055D771 /* Types.swift in Sources */,
+				1D3C80F62C84D33D00806BDD /* InfernoContentView.swift in Sources */,
 				364EA6082C7FA156006E372F /* CalculationDemo.swift in Sources */,
 				1D4C010B2C8108AA00BC6C7E /* EasyShaderDemo.metal in Sources */,
 				1DB1D2572C811546006E1C79 /* PiratesShaderDemo.metal in Sources */,
 				364EA5DC2C7F9D7A006E372F /* ContentView.swift in Sources */,
+				1D3C80F32C84697700806BDD /* LayerShaderDemo.metal in Sources */,
+				1D3C80F12C84664100806BDD /* LayerShaderContentView.swift in Sources */,
 				364EA6062C7F9F91006E372F /* CalculationContentView.swift in Sources */,
 				364EA5DA2C7F9D7A006E372F /* HeavyMetalApp.swift in Sources */,
 				1DB358782C823D4D00FAB837 /* MetalKitViewModel.swift in Sources */,
@@ -740,6 +781,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1D3C80F82C84D51800806BDD /* Inferno */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D4C01072C8103B500BC6C7E /* XCRemoteSwiftPackageReference "Inferno" */;
+			productName = Inferno;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 364EA5CE2C7F9D7A006E372F /* Project object */;
 }

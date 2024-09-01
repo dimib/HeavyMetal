@@ -16,6 +16,40 @@ using namespace metal;
     return half4(sin(angle), sin(angle + 2), sin(angle +4), color.a);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [[stitchable]] float2 wave(float2 pos, float time, float offset) {
     pos.y += sin(time * offset + pos.y / 20) * offset;
     return pos;

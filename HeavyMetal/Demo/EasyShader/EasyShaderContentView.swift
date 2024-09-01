@@ -13,7 +13,7 @@ struct EasyShaderContentView: View {
            Image("AppleLogoBlack")
                 .resizable()
                 .scaledToFit()
-                .colorEffect(ShaderLibrary.gradientFill())
+                .colorEffect(ShaderLibrary.passthrough())
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
     }

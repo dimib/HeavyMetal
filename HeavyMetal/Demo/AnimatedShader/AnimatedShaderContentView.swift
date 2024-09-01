@@ -17,8 +17,7 @@ struct AnimatedShaderContentView: View {
                      .resizable()
                      .scaledToFit()
                      .colorEffect(ShaderLibrary.rainbow(.float(time)))
-                     .distortionEffect(ShaderLibrary.wave(.float(time), .float(4)),
-                                       maxSampleOffset: .zero)
+
             }
 
             Spacer()
@@ -31,3 +30,21 @@ struct AnimatedShaderContentView: View {
 #Preview {
     AnimatedShaderContentView()
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ .distortionEffect(ShaderLibrary.wave(.float(time), .float(4)),
+                   maxSampleOffset: .zero)
+ */

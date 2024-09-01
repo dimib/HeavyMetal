@@ -33,7 +33,7 @@ final class MetalKitViewModel: NSObject {
         pipelineDescriptor.fragmentFunction = library.makeFunction(name: "fragment_shader")
         pipelineDescriptor.depthAttachmentPixelFormat = .invalid
         pipelineDescriptor.colorAttachments[0].pixelFormat = .bgra8Unorm_srgb
-        
+
         let vertexDescriptor = MTLVertexDescriptor()
         vertexDescriptor.attributes[0].format = .float3
         vertexDescriptor.attributes[0].offset = 0
@@ -41,7 +41,7 @@ final class MetalKitViewModel: NSObject {
         vertexDescriptor.attributes[1].format = .float4
         vertexDescriptor.attributes[1].offset = MemoryLayout<SIMD3<Float>>.stride
         vertexDescriptor.attributes[1].bufferIndex = 0
-        vertexDescriptor.layouts[0].stride = MemoryLayout<ColoredVertex>.stride
+        vertexDescriptor.layouts[0].stride = MemoryLayout<TexturedVertex>.stride
         pipelineDescriptor.vertexDescriptor = vertexDescriptor
         
         do {
@@ -50,7 +50,6 @@ final class MetalKitViewModel: NSObject {
             print("error: \(error.localizedDescription)")
             return nil
         }
-
     }
     
     private func loadTexture() {
@@ -78,10 +77,13 @@ extension MetalKitViewModel:MTKViewDelegate {
     }
     
     func draw(in view: MTKView) {
+
         guard let drawable = view.currentDrawable,
               let pipelineState,
               let texture else { return
         }
+
+
         let commandBuffer = commandQueue?.makeCommandBuffer()
         let descriptor = MTLRenderPassDescriptor()
         descriptor.colorAttachments[0].texture = texture
@@ -95,15 +97,15 @@ extension MetalKitViewModel:MTKViewDelegate {
         // Füge deine Metal-Pipeline, Vertex-Buffer und Shader-Setup hier ein
         let vertices = [
             TexturedVertex(position: SIMD3(x: -1, y: 1, z: 0), texture: SIMD2(x: 0, y: 0)),
-            TexturedVertex(position: SIMD3(x: 1, y: 1, z: 0), texture: SIMD2(x: 0, y: 0)),
-            TexturedVertex(position: SIMD3(x: 1, y: -1, z: 0), texture: SIMD2(x: 0, y: 0)),
-            TexturedVertex(position: SIMD3(x: -1, y: -1, z: 0), texture: SIMD2(x: 0, y: 0)),
+            TexturedVertex(position: SIMD3(x: 1, y: 1, z: 0), texture: SIMD2(x: 1, y: 0)),
+            TexturedVertex(position: SIMD3(x: 1, y: -1, z: 0), texture: SIMD2(x: 1, y: 1)),
+            TexturedVertex(position: SIMD3(x: -1, y: -1, z: 0), texture: SIMD2(x: 0, y: 1)),
             TexturedVertex(position: SIMD3(x: -1, y: 1, z: 0), texture: SIMD2(x: 0, y: 0))
         ]
         let vertexBuffer = device?.makeBuffer(bytes: vertices, length: vertices.count * MemoryLayout<TexturedVertex>.stride)
         
         renderEncoder.setRenderPipelineState(pipelineState)
-        renderEncoder.setVertexBuffer(vertexBuffer, offset: 0, index: 0)
+//        renderEncoder.setVertexBuffer(vertexBuffer, offset: 0, index: 0)
         renderEncoder.endEncoding()
         commandBuffer?.present(drawable)
         commandBuffer?.commit()

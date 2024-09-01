@@ -23,6 +23,38 @@ using namespace metal;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [[stitchable]] float2 waveFlagReal(float2 pos, float t, float2 size) {
     float offset = 20;
 

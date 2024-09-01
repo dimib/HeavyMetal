@@ -19,6 +19,9 @@ struct ContentView: View {
                 NavigationLink(destination: CalculationContentView()) {
                     label(title: "Calculation")
                 }
+                NavigationLink(destination: HardRockDemoContentView()) {
+                    label(title: "Hard Rock 🤘")
+                }
                 NavigationLink(destination: EasyShaderContentView()) {
                     label(title: "Easy shader")
                 }
@@ -28,9 +31,14 @@ struct ContentView: View {
                 NavigationLink(destination: PiratesShaderContentView()) {
                     label(title: "Arrrr 🏴‍☠️")
                 }
-                NavigationLink(destination: HardRockDemoContentView()) {
-                    label(title: "Hard Rock 🤘")
+                NavigationLink(destination: LayerShaderContentView()) {
+                    label(title: "Layer Shader")
                 }
+                NavigationLink(destination: InfernoContentView()) {
+                    label(title: "Inferno ❤️‍🔥")
+                }
+
+
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         }
