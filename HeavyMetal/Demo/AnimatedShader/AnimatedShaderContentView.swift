@@ -16,6 +16,8 @@ struct AnimatedShaderContentView: View {
                 Image("AppleLogo")
                      .resizable()
                      .scaledToFit()
+                     .distortionEffect(ShaderLibrary.wave(.float(time), .float(4)),
+                                       maxSampleOffset: .zero)
                      .colorEffect(ShaderLibrary.rainbow(.float(time)))
 
             }

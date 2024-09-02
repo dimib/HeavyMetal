@@ -22,41 +22,8 @@ using namespace metal;
     return half4(sin(angle), sin(angle + 2), sin(angle +4), color.a);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [[stitchable]] float2 waveFlagReal(float2 pos, float t, float2 size) {
-    float offset = 20;
+    float offset = 5;
 
     float2 distance = pos / size;
 

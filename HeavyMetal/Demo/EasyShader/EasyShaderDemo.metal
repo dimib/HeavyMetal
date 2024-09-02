@@ -14,120 +14,13 @@ using namespace metal;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [[stitchable]] half4 recolor(float2 pos, half4 color) {
-    return half4(color.r, 0, 0, color.a);
+    return half4(color.r / 2, 255, 0, color.a);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 [[stitchable]] half4 invertAlpha(float2 pos, half4 color) {
     return half4(color.r, color.g, color.b, 1 - color.a);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 [[stitchable]] half4 gradientFill(float2 pos, half4 color) {
     if (color.a == 0) { return color; }

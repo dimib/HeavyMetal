@@ -52,7 +52,7 @@ final class CalculationDemo {
                                               options: []);
         let commandBuffer = commandQueue?.makeCommandBuffer()
         let computeEncoder = commandBuffer?.makeComputeCommandEncoder()
-        
+
         computeEncoder?.setComputePipelineState(pipelineState)
         computeEncoder?.setBuffer(buffer, offset: 0, index: 0)
         computeEncoder?.setBuffer(resultBuffer, offset: 0, index: 1)

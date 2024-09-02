@@ -17,7 +17,7 @@ struct PiratesShaderContentView: View {
 
                 PirateFlagSimpleView(time: time)
 
-//                PirateFlagRealView(time: time)
+                PirateFlagRealView(time: time)
 
                 Spacer().frame(height: 40)
 

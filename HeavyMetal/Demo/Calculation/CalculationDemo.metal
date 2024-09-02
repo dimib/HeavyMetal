@@ -13,3 +13,9 @@ kernel void metal_array_log(device const float* in,
                             uint index [[thread_position_in_grid]]) {
     result[index] = in[index] * 2; //sin(in[index]);
 }
+
+kernel void metal_array_sin(device const float* in,
+                            device float* result,
+                            uint index [[thread_position_in_grid]]) {
+    result[index] = sin(in[index]);
+}
